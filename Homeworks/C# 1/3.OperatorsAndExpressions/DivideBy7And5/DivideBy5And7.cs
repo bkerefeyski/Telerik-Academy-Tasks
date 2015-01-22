@@ -19,6 +19,10 @@ class DivideBy5And7
             parseSuccess = Int32.TryParse(str, out i);
         }
         bool result = (i % 7 == 0) && (i % 5 == 0);
+        if(i == 0)
+        {
+            result = false;
+        }
         Console.WriteLine("Your integer can be divided by 5 and 7? {0}", result);
     }
 }
