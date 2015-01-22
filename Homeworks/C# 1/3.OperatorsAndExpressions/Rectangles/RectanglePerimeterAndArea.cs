@@ -23,12 +23,12 @@ class RectanglePerimeterAndArea
         Console.Write("Enter Height:");
         decimal height;
         string heightStr = Console.ReadLine();
-        parseSuccess = decimal.TryParse(widthStr, out height);
+        parseSuccess = decimal.TryParse(heightStr, out height);
         while (width <= 0 || parseSuccess == false)
         {
             Console.WriteLine("Height is invalid. It should be > 0. Try again: ");
-            widthStr = Console.ReadLine();
-            parseSuccess = decimal.TryParse(widthStr, out height);
+            heightStr = Console.ReadLine();
+            parseSuccess = decimal.TryParse(heightStr, out height);
         }
 
         decimal perimeter = 2 * ((decimal)width + height);
