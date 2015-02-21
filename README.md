@@ -1,1 +1,1 @@
-# Telerik-Academy-Tasks
+#Teleric-Academy-Tasks
